@@ -21,7 +21,8 @@
   --icon-size: clamp(1rem, 1.667vw, 2.67rem); /* 24px at 1440px */
 
   /* Eye sizes - fluid */
-  --eyeSize: clamp(2rem, 6.25vw, 10rem); /* 90px at 1440px */
+  --eyeSize: clamp(1.125rem, 5vw, 8rem); /* 72px at 1440px */
+  --eyeContainerSize: 10vw; /* 144px at 1440px */
 }
 
 body {
@@ -34,6 +35,8 @@ body {
 
 /* Eye component styles */
 .eye-square {
+  width: var(--eyeContainerSize);
+  height: var(--eyeContainerSize);
   display: flex;
   justify-content: center;
   align-items: center;

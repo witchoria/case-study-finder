@@ -4,23 +4,25 @@ import AnimatedEye from './AnimatedEye';
 
 export default function Header() {
   return (
-    <header className="bg-black w-full py-6 px-8">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Left side - 4 eyes */}
-        <div className="flex gap-4">
+    <header className="bg-black w-full py-6">
+      <div className="flex items-center justify-between">
+        {/* Left side - 4 eyes (40vw total) */}
+        <div className="flex">
           <AnimatedEye />
           <AnimatedEye />
           <AnimatedEye />
           <AnimatedEye />
         </div>
 
-        {/* Center - H1 */}
-        <h1 className="font-cofo text-white uppercase" style={{ fontSize: 'var(--text-large)' }}>
-          PRODUCT LURK
-        </h1>
+        {/* Center - H1 (20vw) */}
+        <div className="flex items-center justify-center" style={{ width: '20vw' }}>
+          <h1 className="font-cofo text-white uppercase text-center" style={{ fontSize: 'var(--text-large)' }}>
+            PRODUCT LURK
+          </h1>
+        </div>
 
-        {/* Right side - 4 eyes */}
-        <div className="flex gap-4">
+        {/* Right side - 4 eyes (40vw total) */}
+        <div className="flex">
           <AnimatedEye />
           <AnimatedEye />
           <AnimatedEye />
