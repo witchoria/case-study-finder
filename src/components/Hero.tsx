@@ -5,7 +5,7 @@ import SearchForm from './SearchForm';
 export default function Hero() {
   return (
     <section className="w-full min-h-[80vh] flex items-center justify-center px-8" style={{ paddingTop: 'var(--spacing-section)', paddingBottom: 'var(--spacing-section)' }}>
-      <div className="max-w-5xl w-full">
+      <div className="w-full">
         {/* Yellow folder container */}
         <div className="relative">
           {/* Folder tab */}
