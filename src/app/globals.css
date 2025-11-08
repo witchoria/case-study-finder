@@ -32,6 +32,8 @@ body {
   font-family: "cofo-sans-mono", monospace;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Eye component styles */
@@ -50,6 +52,9 @@ body {
   background: #FFF;
   position: relative;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .eye {
@@ -61,6 +66,9 @@ body {
   display: flex;
   justify-content: center;
   transition: transform 0.1s ease-out;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .eye-ball {
