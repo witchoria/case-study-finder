@@ -4,7 +4,7 @@ import AnimatedEye from './AnimatedEye';
 
 export default function Header() {
   return (
-    <header className="bg-black w-full py-6">
+    <header className="bg-black w-full">
       <div className="flex items-center justify-between">
         {/* Left side - 4 eyes (40vw total) */}
         <div className="flex">
