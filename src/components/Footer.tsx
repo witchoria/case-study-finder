@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Column 1 */}
           <div>
             <h3 className="font-geminis text-xl mb-4">Product</h3>
-            <ul className="font-cofo space-y-2 text-sm">
+            <ul className="font-cofo space-y-2" style={{ fontSize: 'var(--text-regular)' }}>
               <li>
                 <a href="#" className="hover:text-yellow transition-colors">
                   Features
@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Column 2 */}
           <div>
             <h3 className="font-geminis text-xl mb-4">Company</h3>
-            <ul className="font-cofo space-y-2 text-sm">
+            <ul className="font-cofo space-y-2" style={{ fontSize: 'var(--text-regular)' }}>
               <li>
                 <a href="#" className="hover:text-yellow transition-colors">
                   About
@@ -60,7 +60,7 @@ export default function Footer() {
           {/* Column 3 */}
           <div>
             <h3 className="font-geminis text-xl mb-4">Legal</h3>
-            <ul className="font-cofo space-y-2 text-sm">
+            <ul className="font-cofo space-y-2" style={{ fontSize: 'var(--text-regular)' }}>
               <li>
                 <a href="#" className="hover:text-yellow transition-colors">
                   Privacy
@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray text-center">
-          <p className="font-cofo text-sm text-gray">
+          <p className="font-cofo text-gray" style={{ fontSize: 'var(--text-regular)' }}>
             © 2024 Product Lurk. All rights reserved.
           </p>
         </div>
