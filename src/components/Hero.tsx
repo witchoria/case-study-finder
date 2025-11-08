@@ -9,10 +9,10 @@ export default function Hero() {
         {/* Yellow folder container */}
         <div className="relative">
           {/* Folder tab */}
-          <div className="absolute -top-8 left-12 w-48 h-12 bg-yellow rounded-t-lg" />
+          <div className="absolute -top-8 left-12 w-48 h-12 rounded-t-lg" style={{ backgroundColor: '#FFC559' }} />
 
           {/* Main folder body */}
-          <div className="bg-yellow rounded-lg p-12 md:p-16 lg:p-20">
+          <div className="rounded-lg p-12 md:p-16 lg:p-20" style={{ backgroundColor: '#FFC559' }}>
             {/* Paragraph above headline */}
             <p className="font-cofo text-black text-lg md:text-xl mb-6">
               All's fair in love and product strategy
