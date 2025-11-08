@@ -19,7 +19,7 @@ export default function SearchForm() {
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search for case studies..."
+          placeholder="Enter company name..."
           className="w-full px-6 py-4 pr-14 text-lg font-cofo bg-white text-black border-2 border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-black placeholder-gray"
         />
 

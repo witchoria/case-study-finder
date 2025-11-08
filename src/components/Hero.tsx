@@ -12,7 +12,12 @@ export default function Hero() {
           <div className="absolute -top-8 left-12 w-48 h-12 bg-yellow rounded-t-lg" />
 
           {/* Main folder body */}
-          <div className="bg-yellow rounded-lg p-12 md:p-16 lg:p-20 shadow-2xl">
+          <div className="bg-yellow rounded-lg p-12 md:p-16 lg:p-20">
+            {/* Paragraph above headline */}
+            <p className="font-cofo text-black text-lg md:text-xl mb-6">
+              All's fair in love and product strategy
+            </p>
+
             {/* Headline */}
             <h1 className="font-geminis text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-black mb-8 md:mb-12 leading-tight">
               Keep your enemies close, and their case studies closer.
