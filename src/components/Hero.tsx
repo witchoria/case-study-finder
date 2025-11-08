@@ -4,7 +4,7 @@ import SearchForm from './SearchForm';
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-[80vh] flex items-center justify-center px-8" style={{ paddingTop: 'var(--spacing-section)', paddingBottom: 'var(--spacing-section)' }}>
+    <section className="w-full min-h-[80vh] flex items-center justify-center" style={{ paddingTop: 'var(--spacing-section)', paddingBottom: 'var(--spacing-section)', paddingLeft: 'var(--spacing-horizontal)', paddingRight: 'var(--spacing-horizontal)' }}>
       <div className="w-full">
         {/* Yellow folder container */}
         <div className="relative">

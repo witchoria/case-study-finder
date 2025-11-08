@@ -15,6 +15,7 @@
 
   /* Fluid spacing */
   --spacing-section: clamp(2rem, 5vw, 8rem); /* 72px at 1440px */
+  --spacing-horizontal: clamp(1rem, 10vw, 16rem); /* 144px at 1440px */
 }
 
 body {
