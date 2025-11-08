@@ -23,6 +23,7 @@
   /* Eye sizes - fluid */
   --eyeSize: clamp(1.125rem, 5vw, 8rem); /* 72px at 1440px */
   --eyeContainerSize: 10vw; /* 144px at 1440px */
+  --eyeStroke: clamp(1px, 0.139vw, 3px); /* 2px at 1440px */
 }
 
 body {
@@ -48,13 +49,14 @@ body {
   border-radius: 50%;
   background: #FFF;
   position: relative;
+  overflow: hidden;
 }
 
 .eye {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: solid 2px var(--black);
+  border: solid var(--eyeStroke) var(--black);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -66,8 +68,8 @@ body {
   height: calc(var(--eyeSize) / 1.7);
   border-radius: 50%;
   background: var(--gray);
-  margin-top: -3px;
-  border: solid 2px var(--black);
+  margin-top: calc(var(--eyeStroke) * -1.5);
+  border: solid var(--eyeStroke) var(--black);
   display: flex;
   justify-content: center;
   align-items: center;
