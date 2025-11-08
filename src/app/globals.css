@@ -19,6 +19,9 @@
 
   /* Fluid icon sizes */
   --icon-size: clamp(1rem, 1.667vw, 2.67rem); /* 24px at 1440px */
+
+  /* Eye sizes - fluid */
+  --eyeSize: clamp(2rem, 6.25vw, 10rem); /* 90px at 1440px */
 }
 
 body {
@@ -27,6 +30,60 @@ body {
   font-family: "cofo-sans-mono", monospace;
   margin: 0;
   padding: 0;
+}
+
+/* Eye component styles */
+.eye-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-wrapper {
+  width: var(--eyeSize);
+  height: var(--eyeSize);
+  border-radius: 50%;
+  background: #FFF;
+  position: relative;
+}
+
+.eye {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid 2px var(--black);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.1s ease-out;
+}
+
+.eye-ball {
+  width: calc(var(--eyeSize) / 1.7);
+  height: calc(var(--eyeSize) / 1.7);
+  border-radius: 50%;
+  background: var(--gray);
+  margin-top: -3px;
+  border: solid 2px var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-iris {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: var(--black);
+}
+
+.eye-wrapper:hover .eye {
+  transform: rotate(0deg) !important;
+  align-items: center;
+}
+
+.eye-wrapper:hover .eye-ball {
+  margin: 0;
 }
 
 @layer utilities {

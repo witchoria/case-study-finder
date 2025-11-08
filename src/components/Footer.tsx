@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         {/* Centered Eye */}
         <div className="flex justify-center mb-12">
-          <AnimatedEye size={60} />
+          <AnimatedEye />
         </div>
 
         {/* 3-column layout */}

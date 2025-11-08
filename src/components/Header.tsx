@@ -8,10 +8,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left side - 4 eyes */}
         <div className="flex gap-4">
-          <AnimatedEye size={32} />
-          <AnimatedEye size={32} />
-          <AnimatedEye size={32} />
-          <AnimatedEye size={32} />
+          <AnimatedEye />
+          <AnimatedEye />
+          <AnimatedEye />
+          <AnimatedEye />
         </div>
 
         {/* Center - H1 */}
@@ -21,10 +21,10 @@ export default function Header() {
 
         {/* Right side - 4 eyes */}
         <div className="flex gap-4">
-          <AnimatedEye size={32} />
-          <AnimatedEye size={32} />
-          <AnimatedEye size={32} />
-          <AnimatedEye size={32} />
+          <AnimatedEye />
+          <AnimatedEye />
+          <AnimatedEye />
+          <AnimatedEye />
         </div>
       </div>
     </header>
