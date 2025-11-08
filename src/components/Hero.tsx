@@ -8,11 +8,21 @@ export default function Hero() {
       <div className="w-full">
         {/* Yellow folder container */}
         <div className="relative">
-          {/* Folder tab */}
-          <div className="absolute -top-8 left-12 w-48 h-12 rounded-t-lg" style={{ backgroundColor: '#FFC559' }} />
+          {/* Folder tab SVG */}
+          <img
+            src="/images/folder%20tab.svg"
+            alt="Folder tab"
+            className="absolute"
+            style={{
+              top: 'clamp(-2rem, -5.556vw, -8.89rem)',
+              left: 'clamp(1rem, 8.333vw, 13.33rem)',
+              width: 'clamp(8rem, 16.667vw, 26.67rem)',
+              height: 'auto'
+            }}
+          />
 
           {/* Main folder body */}
-          <div className="rounded-lg" style={{ backgroundColor: '#FFC559', padding: 'var(--spacing-section)' }}>
+          <div style={{ backgroundColor: '#FFC559', padding: 'var(--spacing-section)' }}>
             {/* Paragraph above headline */}
             <p className="font-cofo text-black mb-6" style={{ fontSize: 'var(--text-large)' }}>
               All's fair in love and product strategy
