@@ -7,17 +7,15 @@ export default function Hero() {
     <section className="w-full min-h-[80vh] flex items-center justify-center" style={{ paddingTop: 'var(--spacing-section)', paddingBottom: 'var(--spacing-section)', paddingLeft: 'var(--spacing-horizontal)', paddingRight: 'var(--spacing-horizontal)' }}>
       <div className="w-full">
         {/* Yellow folder container */}
-        <div className="relative">
+        <div>
           {/* Folder tab SVG */}
           <img
             src="/images/folder%20tab.svg"
             alt="Folder tab"
-            className="absolute"
             style={{
-              top: 'clamp(-2rem, -5.556vw, -8.89rem)',
-              left: 'clamp(1rem, 8.333vw, 13.33rem)',
               width: 'clamp(8rem, 16.667vw, 26.67rem)',
-              height: 'auto'
+              height: 'auto',
+              display: 'block'
             }}
           />
 
