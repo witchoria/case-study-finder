@@ -14,6 +14,11 @@ export default function Header() {
           <AnimatedEye size={32} />
         </div>
 
+        {/* Center - H1 */}
+        <h1 className="font-cofo text-white uppercase" style={{ fontSize: 'var(--text-large)' }}>
+          PRODUCT LURK
+        </h1>
+
         {/* Right side - 4 eyes */}
         <div className="flex gap-4">
           <AnimatedEye size={32} />

@@ -18,10 +18,10 @@ export default function Hero() {
               All's fair in love and product strategy
             </p>
 
-            {/* Headline */}
-            <h1 className="font-geminis text-black mb-8 leading-tight" style={{ fontSize: 'var(--text-h1)' }}>
+            {/* Hero headline */}
+            <p className="font-geminis text-black mb-8 leading-tight" style={{ fontSize: 'var(--text-h1)' }}>
               Keep your enemies close, and their case studies closer.
-            </h1>
+            </p>
 
             {/* Search Form */}
             <SearchForm />
