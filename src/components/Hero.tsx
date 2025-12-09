@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import SearchForm from './SearchForm';
 
 export default function Hero() {
@@ -9,9 +10,11 @@ export default function Hero() {
         {/* Yellow folder container */}
         <div>
           {/* Folder tab SVG */}
-          <img
+          <Image
             src="/images/folder%20tab.svg"
             alt="Folder tab"
+            width={427}
+            height={100}
             style={{
               width: 'clamp(8rem, 16.667vw, 26.67rem)',
               height: 'auto',
@@ -23,7 +26,7 @@ export default function Hero() {
           <div style={{ backgroundColor: '#FFC559', padding: 'var(--spacing-section)' }}>
             {/* Paragraph above headline */}
             <p className="font-cofo text-black mb-6" style={{ fontSize: 'var(--text-large)' }}>
-              All's fair in love and product strategy
+              All&apos;s fair in love and product strategy
             </p>
 
             {/* Hero headline */}

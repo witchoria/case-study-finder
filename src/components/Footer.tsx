@@ -34,7 +34,7 @@ export default function Footer() {
             ☕ Buy me a coffee
           </button>
           <p className="font-cofo" style={{ fontSize: 'var(--text-regular)' }}>
-            (API's are expensive!)
+            (API&apos;s are expensive!)
           </p>
         </div>
       </div>
