@@ -2,13 +2,18 @@
 
 import { useState } from 'react';
 
-export default function SearchForm() {
+interface SearchFormProps {
+  onSearch: (query: string) => void;
+}
+
+export default function SearchForm({ onSearch }: SearchFormProps) {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Backend integration later
-    console.log('Search query:', searchQuery);
+    if (searchQuery.trim()) {
+      onSearch(searchQuery);
+    }
   };
 
   return (
