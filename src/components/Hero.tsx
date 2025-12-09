@@ -5,7 +5,7 @@ import SearchForm from './SearchForm';
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-[80vh] flex items-center justify-center" style={{ paddingTop: 'var(--spacing-section)', paddingBottom: 'var(--spacing-section)', paddingLeft: 'var(--spacing-horizontal)', paddingRight: 'var(--spacing-horizontal)' }}>
+    <section className="w-full flex items-center justify-center px-4 md:px-[var(--spacing-horizontal)] py-[var(--spacing-section)]">
       <div className="w-full">
         {/* Yellow folder container */}
         <div>
@@ -23,7 +23,7 @@ export default function Hero() {
           />
 
           {/* Main folder body */}
-          <div style={{ backgroundColor: '#FFC559', padding: 'var(--spacing-section)' }}>
+          <div className="p-4 md:p-[var(--spacing-section)]" style={{ backgroundColor: '#FFC559' }}>
             {/* Paragraph above headline */}
             <p className="font-cofo text-black mb-6" style={{ fontSize: 'var(--text-large)' }}>
               All&apos;s fair in love and product strategy
