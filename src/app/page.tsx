@@ -7,16 +7,13 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   const [showResults, setShowResults] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
+  const handleSearch = (_query: string) => {
     setShowResults(true);
   };
 
   const handleNewSearch = () => {
     setShowResults(false);
-    setSearchQuery('');
   };
 
   return (
