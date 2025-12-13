@@ -80,7 +80,7 @@ export default function Hero({ showResults, onSearch, onNewSearch }: HeroProps) 
 
                 {/* Results table */}
                 <div className="overflow-x-auto mb-8">
-                  <table className="w-full">
+                  <table className="w-full border-2 border-black">
                     <thead>
                       <tr className="bg-black text-white">
                         <th className="font-cofo text-left p-4" style={{ fontSize: 'var(--text-regular)' }}>#</th>
@@ -90,10 +90,10 @@ export default function Hero({ showResults, onSearch, onNewSearch }: HeroProps) 
                       </tr>
                     </thead>
                     <tbody>
-                      {mockResults.map((result, index) => (
+                      {mockResults.map((result) => (
                         <tr
                           key={result.id}
-                          className={index % 2 === 0 ? 'bg-white' : 'bg-black text-white'}
+                          className="bg-white text-black border-b-2 border-black"
                         >
                           <td className="p-4">
                             <div className="inline-flex items-center justify-center w-8 h-8 bg-black text-white font-cofo" style={{ fontSize: 'var(--text-regular)' }}>
