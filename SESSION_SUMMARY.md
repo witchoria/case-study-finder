@@ -195,3 +195,46 @@ src/
 - Eyes follow mouse cursor across entire viewport
 - Hover over eyes to center them
 - All components use fluid sizing for seamless responsiveness
+
+---
+
+## Session 2 - December 13, 2025
+
+### Changes Made
+
+#### 1. Results Table Styling Update
+**File:** `src/components/Hero.tsx:83-96`
+
+Updated the results table with improved visual hierarchy:
+- Added 2px solid black border around entire table
+- Kept table header with black background and white text
+- Changed all result rows to white background with black text
+- Removed alternating row colors for consistency
+- Added 2px solid black border dividers between each row
+
+#### 2. Environment Configuration
+**File:** `.env.local` (created)
+
+Set up environment configuration for Google Custom Search API:
+- Created `.env.local` file in project root
+- Added `GOOGLE_API_KEY` variable
+- Added `GOOGLE_SEARCH_ENGINE_ID` variable
+- User populated with actual API credentials
+
+#### 3. Package Installation
+Installed axios (v1.x) for making API calls to Google Custom Search
+
+### Files Modified
+- `src/components/Hero.tsx` - Results table styling
+- `.env.local` - New file with Google API credentials
+- `package.json` - Added axios dependency
+
+### Technical Details
+- Table now uses consistent white rows with black text
+- Border styling uses Tailwind classes: `border-2`, `border-black`, `border-b-2`
+- Environment variables ready for API integration
+
+### Next Steps
+- Implement Google Custom Search API integration using axios
+- Connect search form to backend API
+- Display real search results in the table
